@@ -1,7 +1,11 @@
-import "./App.css";
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <ComingSoon />
+    </>
+  );
 }
 
 export default App;
