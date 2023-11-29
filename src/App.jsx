@@ -1,9 +1,13 @@
-import ComingSoon from "./components/ComingSoon/ComingSoon";
+ 
+import { account } from "./lib/appwrite";
 
 function App() {
+  function loginwithGoogle() {
+    account.createOAuth2Session("google");
+  }
   return (
     <>
-      <ComingSoon />
+      <button onClick={loginwithGoogle}>Google login</button>
     </>
   );
 }
