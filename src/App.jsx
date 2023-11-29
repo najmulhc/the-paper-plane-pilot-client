@@ -1,4 +1,5 @@
  
+import BookCard from "./components/BookCard/BookCard";
 import { account } from "./lib/appwrite";
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
   return (
     <>
       <button onClick={loginwithGoogle}>Google login</button>
+      <div>
+        <BookCard/>
+      </div>
     </>
   );
 }
